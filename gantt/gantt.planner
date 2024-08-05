@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<project name="" company="" manager="" phase="" project-start="20240625T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Working" description="A default working day"/>
+      <day-type id="1" name="Nonworking" description="A default non working day"/>
+      <day-type id="2" name="Use base" description="Use day from base calendar"/>
+    </day-types>
+    <calendar id="1" name="Default">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Gesti&#xF3;n del proyecto" note="" work="1036800" start="20240625T000000Z" end="20240812T170000Z" work-start="20240625T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="2" name="Estudio de necesidades" note="" work="57600" start="20240625T000000Z" end="20240626T170000Z" work-start="20240625T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="3" name="An&#xE1;lisis de requerimientos" note="" work="57600" start="20240626T170000Z" end="20240628T170000Z" work-start="20240627T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="2" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="4" name="An&#xE1;lisis de factibilidad" note="" work="57600" start="20240628T170000Z" end="20240702T170000Z" work-start="20240701T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="3" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="5" name="Entregables GdP hasta secci&#xF3;n 5" note="" work="144000" start="20240702T000000Z" end="20240708T170000Z" work-start="20240702T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20240702T000000Z"/>
+      </task>
+      <task id="6" name="Entregables GdP hasta secci&#xF3;n 9" note="" work="144000" start="20240708T170000Z" end="20240715T170000Z" work-start="20240709T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="5" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="7" name="Entregables GdP hasta secci&#xF3;n 12" note="" work="144000" start="20240715T170000Z" end="20240722T170000Z" work-start="20240716T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="6" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="8" name="Entregables GdP hasta secci&#xF3;n 15" note="" work="144000" start="20240722T170000Z" end="20240729T170000Z" work-start="20240723T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="7" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="9" name="Elaboraci&#xF3;n presentaci&#xF3;n GdP" note="" work="144000" start="20240729T170000Z" end="20240805T170000Z" work-start="20240730T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="8" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="10" name="Revisi&#xF3;n y correcciones entregables GdP" note="" work="144000" start="20240805T170000Z" end="20240812T170000Z" work-start="20240806T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="9" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="11" name="Investigaci&#xF3;n preliminar" note="" work="748800" start="20240702T170000Z" end="20240807T170000Z" work-start="20240703T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="12" name="Investigaci&#xF3;n de modelos de detecci&#xF3;n y clasificaci&#xF3;n" note="" work="288000" start="20240702T170000Z" end="20240716T170000Z" work-start="20240703T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="4" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="13" name="Desarrollo de tests de performance para la aplicaci&#xF3;n" note="" work="288000" start="20240716T170000Z" end="20240730T170000Z" work-start="20240717T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="12" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="14" name="An&#xE1;lisis de los resultados y selecci&#xF3;n del modelo final" note="" work="172800" start="20240730T170000Z" end="20240807T170000Z" work-start="20240731T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="13" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="15" name="Recopilaci&#xF3;n de im&#xE1;genes para los datasets" note="" work="230400" start="20240807T170000Z" end="20240819T170000Z" work-start="20240808T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="16" name="B&#xFA;squeda de datasets de terceros" note="" work="57600" start="20240807T170000Z" end="20240809T170000Z" work-start="20240808T080000Z" percent-complete="26" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="14" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="17" name="Captura de im&#xE1;genes" note="" work="57600" start="20240809T170000Z" end="20240813T170000Z" work-start="20240812T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="16" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="18" name="Preparaci&#xF3;n del dataset" note="" work="57600" start="20240813T170000Z" end="20240815T170000Z" work-start="20240814T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="17" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="19" name="Refinamiento y seleccci&#xF3;n final" note="" work="57600" start="20240815T170000Z" end="20240819T170000Z" work-start="20240816T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="18" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="20" name="Entrenamiento de la red neuronal" note="" work="691200" start="20240819T170000Z" end="20240920T170000Z" work-start="20240820T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="21" name="Desarrollo del modelo" note="" work="345600" start="20240819T170000Z" end="20240904T170000Z" work-start="20240820T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="19" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="22" name="Entrenamiento del modelo" note="" work="115200" start="20240904T170000Z" end="20240910T170000Z" work-start="20240905T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="21" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="23" name="Ajuste de hiperpar&#xE1;metros" note="" work="115200" start="20240910T170000Z" end="20240916T170000Z" work-start="20240911T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="22" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="24" name="Refinamiento del dataset" note="" work="115200" start="20240916T170000Z" end="20240920T170000Z" work-start="20240917T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="23" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="25" name="Desarrollo del sistema global" note="" work="460800" start="20240920T170000Z" end="20241014T170000Z" work-start="20240923T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="26" name="Desarrollo de una interfaz de comandos de alto nivel" note="" work="115200" start="20240920T170000Z" end="20240926T170000Z" work-start="20240923T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="24" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="27" name="Desarrollo del sistema de registro en base de datos" note="" work="115200" start="20240926T170000Z" end="20241002T170000Z" work-start="20240927T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="26" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="28" name="Evaluaci&#xF3;n de desempe&#xF1;o del sistema" note="" work="115200" start="20241002T170000Z" end="20241008T170000Z" work-start="20241003T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="27" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="29" name="Desarrollo de demos" note="" work="115200" start="20241008T170000Z" end="20241014T170000Z" work-start="20241009T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="28" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="30" name="Generaci&#xF3;n de entregables y proceso de cierre" note="" work="3456000" start="20240820T000000Z" end="20241209T170000Z" work-start="20240820T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="31" name="Inicio elaboraci&#xF3;n memoria t&#xE9;cnica - Taller de Trabajo Final A" note="" work="864000" start="20240820T000000Z" end="20240930T170000Z" work-start="20240820T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20240820T000000Z"/>
+      </task>
+      <task id="32" name="Revisi&#xF3;n y correcciones de la memoria" note="" work="288000" start="20240930T170000Z" end="20241014T170000Z" work-start="20241001T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="31" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="33" name="Fin de elaboraci&#xF3;n memoria t&#xE9;cnica - Taller de Trabajo Final B" note="" work="864000" start="20241014T170000Z" end="20241125T170000Z" work-start="20241015T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="29" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="34" name="Revisi&#xF3;n y correcciones de la memoria" note="" work="288000" start="20241125T170000Z" end="20241209T170000Z" work-start="20241126T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="33" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="35" name="Elaboraci&#xF3;n presentaci&#xF3;n final" note="" work="864000" start="20241014T170000Z" end="20241125T170000Z" work-start="20241015T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="32" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="36" name="Revisi&#xF3;n y correcciones de la presentaci&#xF3;n final" note="" work="288000" start="20241125T170000Z" end="20241209T170000Z" work-start="20241126T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="35" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources/>
+  <allocations/>
+</project>

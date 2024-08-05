@@ -18,8 +18,8 @@
 \autor{Ing. Sergio Hinojosa}
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
-\director{Título y Nombre del director}
-\pertenenciaDirector{pertenencia} 
+\director{Ing. Maxim Dorogov}
+\pertenenciaDirector{FIUBA} 
 \codirector{} % para que aparezca en la portada se debe descomentar la opción codirector en los parámetros de documentclass
 \pertenenciaCoDirector{}
 
@@ -27,8 +27,8 @@
 \cliente{Dr. Gerardo Sánchez}
 \empresaCliente{INTA}
  
-\fechaINICIO{18 de Junio de 2024}		%Fecha de inicio de la cursada de GdP \fechaInicioName
-\fechaFINALPlan{13 de Agosto de 2024} 	%Fecha de final de cursada de GdP
+\fechaINICIO{18 de junio de 2024}		%Fecha de inicio de la cursada de GdP \fechaInicioName
+\fechaFINALPlan{13 de agosto de 2024} 	%Fecha de final de cursada de GdP
 \fechaFINALTrabajo{- de - de 2024}	%Fecha de defensa pública del trabajo final
 
 
@@ -57,15 +57,12 @@
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
-0      & Creación del documento                                 &\fechaInicioName \\ \hline
-1      & Se completa hasta el punto 5 inclusive                & {9} de {Julio} de 2024 \\ \hline
-%2      & Se completa hasta el punto 9 inclusive
-%		  Se puede agregar algo más \newline
-%		  En distintas líneas \newline
-%		  Así                                                    & {día} de {mes} de 202X \\ \hline
-%3      & Se completa hasta el punto 12 inclusive                & {día} de {mes} de 202X \\ \hline
-%4      & Se completa el plan	                                 & {día} de {mes} de 202X \\ \hline
-
+0      & Creación del documento &\fechaInicioName \\ \hline
+1      & Se completa hasta el punto 5 inclusive & {2} de {Julio} de 2024 \\ \hline
+2      & Se completa hasta el punto 9 inclusive & {9} de {Julio} de 2024 \\ \hline
+3      & Se completa hasta el punto 12 inclusive  & {22} de {Julio} de 2024 \\ \hline
+4      & Se completa el plan  & {31} de {Julio} de 2024 \\ \hline
+4.1    & Se completa el plan  & {4} de {Agosto} de 2024 \\ \hline
 % Si hay más correcciones pasada la versión 4 también se deben especificar acá
 
 \end{tabularx}
@@ -84,9 +81,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'' y consistirá en la implementación de un algoritmo que permita identificar y cuantificar frutos de duraznos a partir de imágenes de árboles tomadas a campo. El trabajo tendrá un presupuesto preliminar estimado de 600 horas,
-% y un costo estimado de \textcolor{red}{\$ XXX}
-con fecha de inicio el \fechaInicioName\hspace{1px} y fecha de presentación pública en el mes de Diciembre de 2024.%\fechaFinalName.
+Por medio de la presente se acuerda con \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'' y consistirá en la implementación de un algoritmo que permita identificar y cuantificar frutos de duraznos a partir de imágenes de árboles tomadas a campo. El trabajo tendrá un presupuesto preliminar estimado de 600 horas y un costo estimado de US\$18267, con fecha de inicio el \fechaInicioName\hspace{1px} y fecha de presentación pública en el mes de diciembre de 2024.%\fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -165,10 +160,12 @@ Orientador    & \supname	      & \pertesupname 	& Director del Trabajo Final \\ 
 %Opositores    &                   &              	&        	\\ \hline
 %Usuario final &                   &              	&        	\\ \hline
 
-Cliente: El Dr. Gerardo Sanchez tiene más de 20 años de experiencia en biotecnología frutícola, colaborará en los requerimientos y en la válidación de los modelos desarrollados.
-
 \end{tabularx}
 \end{table}
+
+Cliente: el Dr. Gerardo Sanchez tiene más de 20 años de experiencia en biotecnología frutícola, colaborará en los requerimientos y en la válidación de los modelos desarrollados.
+
+Orientador: el Ing. Maxim Dorogov posee gran experiencia y conocimientos en el área de visión artificial. Es orientador desde los aspectos técnicos y participa en definir los objetivos del proyecto.
 
 \section{3. Propósito del proyecto}
 \label{sec:proposito}
@@ -188,9 +185,9 @@ El proyecto incluye:
 
 El proyecto no incluye:
 \begin{itemize}
-	\item Procesamiento de imágenes en blano y negro.
+	\item Procesamiento de imágenes en blanco y negro.
 	\item Procesamiento de video.
-	\item Implementación industrial. No se realizará un deploy en ningún sistema embebido ni en la nube, el sistema semantendrá en un entorno de desarrollo.
+	\item Implementación industrial. No se realizará un deploy en ningún sistema embebido ni en la nube, el sistema se mantendrá en un entorno de desarrollo.
 \end{itemize}
 
 
@@ -232,7 +229,7 @@ Para el desarrollo del presente proyecto se supone que se contará con:
 	
 	\item Requerimientos de testing:
 	\begin{enumerate}
-		\item El modelo debe ser entrenado a partir de modelos pre-entrenados utilizando la técnica de transfer learning.
+		\item El modelo debe ser entrenado a partir de modelos pre-entrenados utilizando la técnica de \textit{transfer learning}.
 		\item El entrenamiento del modelo debe realizarse a partir de un dataset creado con imágenes propias y de terceros respetando los derechos de uso establecidos por los mismos.
 		\item El entrenamiento y las pruebas en los datasets de validación y testing deben ser llevadas adelante en notebooks escritas en lenguaje de programación Python 3.8 o superior.
 	\end{enumerate}
@@ -256,41 +253,41 @@ El criterio establecido para la asignación de los puntajes de las historias de 
 Cada uno de los criterios individuales puede tener un valor entre 0 (bajo) y 5 (alto). El puntaje final será la suma de los puntajes individuales y se le asignará el valor más próximo de los valores de la serie de Fibonacci: 1, 2, 3, 5, 8, 13, 20.
 
 \begin{itemize}
-\item quiero un sistema de visión artificial que detecte y cuente automáticamente la cantidad de duraznos en mis árboles, para poder monitorear y gestionar mejor mi producción.
+\item Como usuario, quiero un sistema de visión artificial que detecte y cuente automáticamente la cantidad de duraznos en mis árboles, para poder monitorear y gestionar mejor mi producción.
 	\begin{itemize}
-	\item complejidad: 4
-	\item dificultad: 3
-	\item incertidumbre: 3
+	\item Complejidad: 4
+	\item Dificultad: 3
+	\item Incertidumbre: 3
 	\item \textit{Story points}: 13 
 	\end{itemize}
 \end{itemize}
 
 \begin{itemize}
-\item Como usuario quiero poder capturar imágenes de mis árboles utilizando una cámara y poder subirla al sistema para el conteo de los frutos.
+\item Como usuario, quiero poder capturar imágenes de mis árboles utilizando una cámara y poder subirla al sistema para el conteo de los frutos.
 	\begin{itemize}
-	\item complejidad: 1
-	\item dificultad: 1
-	\item incertidumbre: 2
+	\item Complejidad: 1
+	\item Dificultad: 1
+	\item Incertidumbre: 2
 	\item \textit{Story points}: 5 
 	\end{itemize}
 \end{itemize}
 
 \begin{itemize}
-\item Como usuario quiero poder configurar parámetros del sistema (como la sensibilidad de detección), para ajustar la precisión del conteo según las condiciones específicas de mi plantación.
+\item Como usuario, quiero poder configurar parámetros del sistema (como la sensibilidad de detección), para ajustar la precisión del conteo según las condiciones específicas de mi plantación.
 	\begin{itemize}
-	\item complejidad: 4
-	\item dificultad: 2
-	\item incertidumbre: 4
+	\item Complejidad: 4
+	\item Dificultad: 2
+	\item Incertidumbre: 4
 	\item \textit{Story points}: 8 
 	\end{itemize}
 \end{itemize}
 
 \begin{itemize}
-\item Como usuario quiero recibir un reporte con la cantidad de duraznos detectados en cada árbol, para poder tomar decisiones informadas sobre mi cultivo.
+\item Como usuario, quiero recibir un reporte con la cantidad de duraznos detectados en cada árbol, para poder tomar decisiones informadas sobre mi cultivo.
 	\begin{itemize}
-	\item complejidad: 2
-	\item dificultad: 2
-	\item incertidumbre: 2
+	\item Complejidad: 2
+	\item Dificultad: 2
+	\item Incertidumbre: 2
 	\item \textit{Story points}: 8 
 	\end{itemize}
 \end{itemize}
@@ -298,29 +295,29 @@ Cada uno de los criterios individuales puede tener un valor entre 0 (bajo) y 5 (
 \begin{itemize}
 \item Como desarrollador, quiero establecer un entorno de desarrollo escalable, bien documentado y organizado para facilitar la mejora continua del sistema.
 	\begin{itemize}
-	\item complejidad: 3
-	\item dificultad: 5
-	\item incertidumbre: 3
+	\item Complejidad: 3
+	\item Dificultad: 5
+	\item Incertidumbre: 3
 	\item \textit{Story points}: 13 
 	\end{itemize}
 \end{itemize}
 
 \begin{itemize}
-\item Como desarrollador quiero crear un sistema de notificaciones de error y logueo que alerte sobre los problemas en la detección y sea más sencillo remediar bugs o corregir parámetros de configuración.
+\item Como desarrollador, quiero crear un sistema de notificaciones de error y logueo que alerte sobre los problemas en la detección y sea más sencillo remediar bugs o corregir parámetros de configuración.
 	\begin{itemize}
-	\item complejidad: 3
-	\item dificultad: 3
-	\item incertidumbre: 2
+	\item Complejidad: 3
+	\item Dificultad: 3
+	\item Incertidumbre: 2
 	\item \textit{Story points}: 8 
 	\end{itemize}
 \end{itemize}
 
 \begin{itemize}
-\item Como desarrollador quiero diseñar una base de datos para almacenar las imágenes y los resultados de detección, para poder acceder y analizar los datos históricos.
+\item Como desarrollador, quiero diseñar una base de datos para almacenar las imágenes y los resultados de detección, para poder acceder y analizar los datos históricos.
 	\begin{itemize}
-	\item complejidad: 2
-	\item dificultad: 2
-	\item incertidumbre: 2
+	\item Complejidad: 2
+	\item Dificultad: 2
+	\item Incertidumbre: 2
 	\item \textit{Story points}: 8 
 	\end{itemize}
 \end{itemize}
@@ -343,64 +340,71 @@ Los entregables del proyecto son:
 \label{sec:wbs}
 
 \begin{enumerate}
-\item Planificación. (50 hs)
+\item Gestión del proyecto (50 h)
 	\begin{enumerate}
-	\item Estudio de necesidades. (10 hs)
-	\item Análisis de requerimientos. (10 hs)
-	\item Análisis de factibilidad. (10 hs)
-	\item Confección del documento de planificación. (20 hs)
+	\item Estudio de necesidades. (6 h)
+	\item Análisis de requerimientos. (6 h)
+	\item Análisis de factibilidad. (6 h)
+	\item Entregables GdP hasta sección 5. (4 h)
+	\item Entregables GdP hasta sección 9. (4 h)
+	\item Entregables GdP hasta sección 12. (6 h)
+	\item Entregables GdP hasta sección 15. (6 h)
+	\item Elaboración presentación GdP. (6 h)
+	\item Revisión y correcciones entregables GdP. (6 h)
 	\end{enumerate}
 	
-\item Investigación preliminar. (110 hs)
+\item Investigación preliminar (110 h)
 	\begin{enumerate}
-	\item Investigación de modelos de detección y clasificación de objetos. (40 hs)
-	\item Desarrollo de tests de performance para la aplicación. (40 hs)
-	\item Análisis de los resultados y selección del modelo final. (30 hs)
+	\item Investigación de modelos de detección y clasificación de objetos. (40 h)
+	\item Desarrollo de tests de performance para la aplicación. (40 h)
+	\item Análisis de los resultados y selección del modelo final. (30 h)
 	\end{enumerate}
 	
-\item Recopilación de imágenes para los datasets. (60 hs)
+\item Recopilación de imágenes para los datasets (90 h)
 	\begin{enumerate}
-	\item Búsqueda de datasets de terceros. (20 hs)
-	\item Captura de imágenes. (30 hs)
-	\item Preparación del dataset. (20 hs)
-	\item Refinamiento y seleccción final. (10 hs)
+	\item Búsqueda de datasets de terceros. (20 h)
+	\item Captura de imágenes. (30 h)
+	\item Preparación del dataset. (25 h)
+	\item Refinamiento y seleccción final. (15 h)
 	\end{enumerate}
 
-\item Entrenamiento de la red neuronal. (120 hs)
+\item Entrenamiento de la red neuronal (130 h)
 	\begin{enumerate}
-	\item Desarrollo del modelo. (40hs)
-	\item Entrenamiento del modelo. (40hs)
-	\item Ajuste de hiperparámetros. (30hs)
-	\item Refinamiento del dataset. (10hs)
+	\item Desarrollo del modelo. (50 h)
+	\item Entrenamiento del modelo. (40 h)
+	\item Ajuste de hiperparámetros. (30 h)
+	\item Refinamiento del dataset. (10 h)
 	\end{enumerate}
 	
-\item Desarrollo del sistema global. (120 hs)
+\item Desarrollo del sistema global (120 h)
 	\begin{enumerate}
-	\item Desarrollo de una interfaz de comandos de alto nivel. (40 hs)
-	\item Desarrollo del sistema de registro en base de datos. (20 hs)
-	\item Evaluación de desempeño del sistema. (20 hs)
-	\item Desarrollo de demos. (40 hs)
+	\item Desarrollo de una interfaz de comandos de alto nivel. (40 h)
+	\item Desarrollo del sistema de registro en base de datos. (20 h)
+	\item Evaluación de desempeño del sistema. (20 h)
+	\item Desarrollo de demos. (40 h)
 	\end{enumerate}
 	
-\item Elaboración de documentación y presentación. (60 hs)
+\item Generación de entregables y proceso de cierre (100 h)
 	\begin{enumerate}
-	\item Elaborar el informe final del proyecto. (40 hs)
-	\item Entrenamiento del modelo. (30hs)
-	\item Preparar presentación final. (20 hs)
+	\item Inicio elaboración memoria técnica - Taller de Trabajo Final A. (40 h)
+	\item Revisión y correcciones de la memoria. (5 h)
+	\item Fin de elaboración memoria técnica - Taller de Trabajo Final B. (40 h)
+	\item Revisión y correcciones de la memoria. (5 h)
+	\item Elaboración presentación final. (8 h)
+	\item Revisión y correcciones de la presentación final. (2 h)
 	\end{enumerate}
 \end{enumerate}
 
-Cantidad total de horas: 520 hs.
+Cantidad total de horas: 600 horas.
 
 \section{10. Diagrama de Activity On Node}
 \label{sec:AoN}
 
-\begin{consigna}{red}
-Armar el AoN a partir del WBS definido en la etapa anterior.
+En la figura 2, se muestra el diagrama Activity on Node del proyecto. Los tiempos de las tareas están expresados en horas.
 
-Una herramienta simple para desarrollar los diagramas es el Draw.io (\url{https://app.diagrams.net/}).
-\href{https://app.diagrams.net}{Draw.io}
+Si bien se observa alguna paralelización de tareas, estas se realizarán de forma secuencial o intercalada debido a que solo habrá una persona trabajando en ellas.
 
+En el diagrama se indica con un mayor grosor de flecha el camino crítico.
 
 \begin{figure}[htpb]
 \centering 
@@ -409,116 +413,27 @@ Una herramienta simple para desarrollar los diagramas es el Draw.io (\url{https:
 \label{fig:AoN}
 \end{figure}
 
-Indicar claramente en qué unidades están expresados los tiempos.
-De ser necesario indicar los caminos semi críticos y analizar sus tiempos mediante un cuadro.
-Es recomendable usar colores y un cuadro indicativo describiendo qué representa cada color.
-
-\end{consigna}
+Duración del camino crítico: 484 h.
 
 \section{11. Diagrama de Gantt}
 \label{sec:gantt}
 
-\begin{consigna}{red}
-Existen muchos programas y recursos \textit{online} para hacer diagramas de Gantt, entre los cuales destacamos:
-
-\begin{itemize}
-\item Planner
-\item GanttProject
-\item Trello + \textit{plugins}. En el siguiente link hay un tutorial oficial: \\ \url{https://blog.trello.com/es/diagrama-de-gantt-de-un-proyecto}
-\item Creately, herramienta online colaborativa. \\\url{https://creately.com/diagram/example/ieb3p3ml/LaTeX}
-\item Se puede hacer en latex con el paquete \textit{pgfgantt}\\ \url{http://ctan.dcc.uchile.cl/graphics/pgf/contrib/pgfgantt/pgfgantt.pdf}
-\end{itemize}
-
-Pegar acá una captura de pantalla del diagrama de Gantt, cuidando que la letra sea suficientemente grande como para ser legible. 
-Si el diagrama queda demasiado ancho, se puede pegar primero la ``tabla'' del Gantt y luego pegar la parte del diagrama de barras del diagrama de Gantt.
-
-Configurar el software para que en la parte de la tabla muestre los códigos del EDT (WBS).\\
-Configurar el software para que al lado de cada barra muestre el nombre de cada tarea.\\
-Revisar que la fecha de finalización coincida con lo indicado en el Acta Constitutiva.
-
-En la figura \ref{fig:gantt}, se muestra un ejemplo de diagrama de gantt realizado con el paquete de \textit{pgfgantt}. 
-En la plantilla pueden ver el código que lo genera y usarlo de base para construir el propio.
-
-Las fechas pueden ser calculadas utilizando alguna de las herramientas antes citadas. Sin embargo, el siguiente ejemplo
-fue elaborado utilizando 
-\href{https://docs.google.com/spreadsheets/d/1fBz8NhSpc4tkkhz3KjJCbh1nR_ltDkfEcZi4tZXduqs}{esta hoja de cálculo}.
-
-Es importante destacar que el ancho del diagrama estará dado por la longitud del texto utilizado para las tareas 
-(Ejemplo: tarea 1, tarea 2, etcétera) y el valor \textit{x unit}. Para mejorar la apariencia del diagrama, es necesario
-ajustar este valor y, quizás, acortar los nombres de las tareas.
-
-\begin{figure}[htpb]
-  \begin{center}
-    \begin{ganttchart}[
-      time slot unit=day,
-      time slot format=isodate,
-      x unit=0.038cm,
-      y unit title=0.7cm,
-      y unit chart=0.6cm,
-      milestone/.append style={xscale=4}
-      ]{2021-03-05}{2021-12-16}
-      \gantttitlecalendar*{2021-03-05}{2021-12-16}{year} \\
-      \gantttitlecalendar*{2021-03-05}{2021-12-16}{month} \\
-      \ganttgroup{Duración Total}{2021-03-05}{2021-12-16} \\
-      %%%%%%%%%%%%%%%%%Organización
-      \ganttgroup{Organización}{2021-03-05}{2021-04-16} \\
-      \ganttbar{Planificación del proyecto}{2021-03-05}{2021-04-15} \\
-      %%%%%%%%%%%%%%%%%Ejecución
-      \ganttgroup{Ejecución}{2021-04-16}{2021-10-21} \\
-      \ganttbar{Tarea 1}{2021-04-16}{2021-04-29} \\
-      \ganttbar{Tarea 2}{2021-04-30}{2021-05-13} \\
-      \ganttbar{Tarea 3}{2021-05-14}{2021-05-27} \\
-      \ganttbar{Tarea 4}{2021-05-28}{2021-07-12} \\
-      \ganttbar{Tarea 5}{2021-07-13}{2021-08-09} \\
-      \ganttbar{Tarea 6}{2021-08-10}{2021-09-23} \\
-      \ganttbar{Tarea 7}{2021-09-24}{2021-09-30} \\
-      \ganttbar{Tarea 8}{2021-10-01}{2021-10-14} \\
-      \ganttbar{Tarea 9}{2021-10-15}{2021-10-21} \\
-      % %%%%%%%%%%%%%%%%%Finalización
-      \ganttgroup{Finalización}{2021-10-22}{2021-12-16} \\
-      \ganttbar{Memoria v1}{2021-10-22}{2021-11-04} \\
-      \ganttbar{Memoria v2}{2021-11-05}{2021-11-18} \\
-      \ganttbar{Memoria final}{2021-11-19}{2021-12-02} \\
-      % La fecha del siguiente milestone es la fecha en que terminamos la memoria
-      \ganttmilestone{Enviar memoria al director}{2021-12-02} \\
-      \ganttbar{Elaborar la presentación}{2021-12-03}{2021-12-16} \\
-      \ganttmilestone{Ensayo de la presentación}{2021-12-16} \\
-      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    \end{ganttchart}
-  \end{center}
-  \caption{Diagrama de gantt de ejemplo}
-  \label{fig:gantt}
-\end{figure}
-
-
 \begin{landscape}
 \begin{figure}[htpb]
 \centering 
-\includegraphics[height=.85\textheight]{./Figuras/Gantt-2.png}
-\caption{Ejemplo de diagrama de Gantt (apaisado).} %Modificar este título acorde.
+\includegraphics[height=.85\textheight]{./Figuras/Gantt.png}
+\caption{Diagrama de Gantt.} %Modificar este título acorde.
 \label{fig:diagGantt}
 \end{figure}
 
 \end{landscape}
 
-\end{consigna}
-
 
 \section{12. Presupuesto detallado del proyecto}
 \label{sec:presupuesto}
 
-\begin{consigna}{red}
-Si el proyecto es complejo entonces separarlo en partes:
-\begin{itemize}
-	\item Un total global, indicando el subtotal acumulado por cada una de las áreas.
-	\item El desglose detallado del subtotal de cada una de las áreas.
-\end{itemize}
-
-IMPORTANTE: No olvidarse de considerar los COSTOS INDIRECTOS.
-
-Incluir la aclaración de si se emplea como moneda el peso argentino (ARS) o si se usa moneda extranjera (USD, EUR, etc). Si es en moneda extranjera se debe indicar la tasa de conversión respecto a la moneda local en una fecha dada.
-
-\end{consigna}
+A continuación se presenta el presupuesto detallado del proyecto expresado en dólares
+estadounidenses:
 
 \begin{table}[htpb]
 \centering
@@ -531,24 +446,16 @@ Descripción &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total} \\ \hline
- &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} \\ \hline
- &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
+Horas de ingeniería & 
+  \multicolumn{1}{c|}{580} &
+  \multicolumn{1}{c|}{30} &
+  \multicolumn{1}{c|}{17400} \\ \hline
+Cómputo - Google cloud &
+  \multicolumn{1}{c|}{6} &
+  \multicolumn{1}{c|}{45} &
+  \multicolumn{1}{c|}{270} \\ \hline
 \multicolumn{3}{|c|}{SUBTOTAL} &
-  \multicolumn{1}{c|}{} \\ \hline
+  \multicolumn{1}{c|}{17670} \\ \hline
 \rowcolor[HTML]{C0C0C0} 
 \multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS INDIRECTOS} \\ \hline
 \rowcolor[HTML]{C0C0C0} 
@@ -556,59 +463,62 @@ Descripción &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total} \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
+\multicolumn{1}{|l|}{Viáticos} &
+8   &
+12   &
+96   \\ \hline
+\multicolumn{1}{|l|}{30 \% del costo directo} &
+-   &
+-   &
+501   \\ \hline
 \multicolumn{3}{|c|}{SUBTOTAL} &
-  \multicolumn{1}{c|}{} \\ \hline
+  \multicolumn{1}{c|}{597} \\ \hline
 \rowcolor[HTML]{C0C0C0}
 \multicolumn{3}{|c|}{TOTAL} &
-   \\ \hline
+18267   \\ \hline
 \end{tabularx}%
 \end{table}
 
+Al día de la fecha, 28 de Julio de 2024, el costo total es de \$17353650 (pesos argentinos).
 
 \section{13. Gestión de riesgos}
 \label{sec:riesgos}
 
-\begin{consigna}{red}
-a) Identificación de los riesgos (al menos cinco) y estimación de sus consecuencias:
- 
-Riesgo 1: detallar el riesgo (riesgo es algo que si ocurre altera los planes previstos de forma negativa)
-\begin{itemize}
-	\item Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).\\
-	Justificar el motivo por el cual se asigna determinado número de severidad (S).
-	\item Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).\\
-	Justificar el motivo por el cual se asigna determinado número de (O). 
-\end{itemize}   
+En la identificación de los riesgos se utiliza una escala de 1 a 10 para cuantificar la probabilidad de ocurrencia y severidad. Se considera 1 como la mínima probabilidad y 10 la máxima.
 
-Riesgo 2:
+Riesgo 1: registro de imágenes insuficientes para el entrenamiento del modelo.
 \begin{itemize}
-	\item Severidad (S): X.\\
-	Justificación...
-	\item Ocurrencia (O): Y.\\
-	Justificación...
+	\item Severidad (S): 9. El rendimiento del modelo entrenado depende directamente de la calidad del dataset recopilado.
+	\item Probabilidad de ocurrencia (O): 6. La recopilación de imágenes en campo puede ser dificultosa y de baja calidad.
 \end{itemize}
 
-Riesgo 3:
+Riesgo 2: pobre resolución de las imágenes.
 \begin{itemize}
-	\item Severidad (S):  X.\\
-	Justificación...
-	\item Ocurrencia (O): Y.\\
-	Justificación...
+	\item Severidad (S): 8. No solo es necesario una cantidad significativa de imágenes si no que también es importante la calidad de las mismas. Los modelos no se desempeñarían correctamente ocasionando un mal funcionamiento global del sistema.
+	\item Probabilidad de ocurrencia (S): 3. La cámara sería seleccionada teniendo en cuenta los requerimientos y un margen de seguridad adecuado que cubra acualquier eventual
+disminución de resolución causada por el encargado de tomar las imágenes y el preprocesamiento de las mismas.
 \end{itemize}
 
+Riesgo 3: mala precisión de los modelos entrenados.
+\begin{itemize}
+	\item Severidad (S): 8. Los malos resultados del modelo en la etapa de prueba pueden requerir mayores tiempos de entrenamiento e impactar en la viabilidad técnica del proyecto.
+	\item Probabilidad de ocurrencia (O): 4. Los tiempos de entrenamiento son muy extensos y
+muchas veces son una variable de ajuste necesaria.
+\end{itemize}
 
-b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
+Riesgo 4: no contar con suficiente capacidad de cómputo.
+\begin{itemize}
+	\item Severidad (S): 8. Trabajar con procesamiento de imágenes implica gran consumo de recursos de hardware. No contar con la capacidad de cómputo adecuada implicaría que las tareas se hagan más largas de lo estimado o que se requiera contratar servicios de cómputo más costoso.
+	\item Probabilidad de ocurrencia (O): 3. El responsable posee un equipo adecuado y se contrata un servicio de cómputo en la nube que en principio es suficiente para el desarrollo.
+\end{itemize}
+
+Riesgo 5: falta de tiempo y/o recursos humanos para el desarrollo.
+\begin{itemize}
+	\item Severidad (S): 7. Se atrasarían las tareas, no se cumpliría con la planificación y quizás no se lograría completar el proyecto para la fecha de presentación establecida.
+	\item Probabilidad de ocurrencia (O): 4. El proceso de etiquetado del dataset suele ser muy extenso y tedioso por lo que la estimación de tiempo para esa etapa podría ser errónea. La elección del modelo y el ajuste de hiperparámetros es también una tarea que podría variar a lo estimado por la complejidad de su desarrollo.
+\end{itemize}
+
+b) Tabla de gestión de riesgos: (El RPN se calcula como RPN=SxO)
 
 \begin{table}[htpb]
 \centering
@@ -616,77 +526,118 @@ b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
+Registro de imágenes insuficientes para el entrenamiento del modelo & 9 & 6 & 54 & 5 & 6 & 30 \\ \hline
+Pobre resolución de las imágenes & 8 & 3 & 24 & - & - & - \\ \hline
+Mala precisión de los modelos entrenados & 8 & 4 & 32 & 6 & 3 & 18 \\ \hline
+No contar con suficiente capacidad de cómputo & 8 & 3 & 24 & - & - & - \\ \hline
+Falta de tiempo y/o recursos humanos para el desarrollo & 7 & 5 & 35 & 7 & 4 & 28 \\ \hline
 \end{tabularx}%
 \end{table}
 
-Criterio adoptado: 
+Criterio adoptado: se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a 30.
 
-Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a...
 
-Nota: los valores marcados con (*) en la tabla corresponden luego de haber aplicado la mitigación.
+Plan de mitigación de los riesgos que originalmente excedían el RPN máximo establecido:
 
-c) Plan de mitigación de los riesgos que originalmente excedían el RPN máximo establecido:
- 
-Riesgo 1: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
-  Nueva asignación de S y O, con su respectiva justificación:
-  \begin{itemize}
-	\item Severidad (S*): mientras más severo, más alto es el número (usar números del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de severidad (S).
-	\item Probabilidad de ocurrencia (O*): mientras más probable, más alto es el número (usar del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de (O).
-	\end{itemize}
+\textbf{Riesgo 1 - Datos insuficientes}. Plan de mitigación: lograr el mayor avance posible con datos suplementarios. Existen fuentes de datos públicos que se pueden adaptar a esta problemática, el durazno es una fruta muy común.
+\begin{itemize}
+	\item Severidad (S): 5. Es posible favorecer el rendimiento de los modelos con técnicas como \textit{transfer learning} o \textit{one-shot learning} con la variabilidad de datos proporcionado con datasets públicos, aunque no sean específicamente de lo especificado en la problemática a solucionar. De todos modos no es el escenario más favorable.
+	\item Probabilidad de ocurrencia (O): 6. La probabilidad de ocurrencia no se modifica.
+\end{itemize}
+Nueva asignación de S y O: 30.
 
-Riesgo 2: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
- 
-Riesgo 3: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
+\textbf{Riesgo 3. Bajo desempeño de modelos}. Plan de mitigación: Profundizar en las arquitecturas y fundamentos matemáticos de cada modelo para poder hacer ajustes y correcciones. Usar otros trabajos como referencia para incorporar mejoras.
+\begin{itemize}
+	\item Severidad (S): 6. Realizar modificaciones sobre arquitecturas conocidas complejiza la solución e implica un esfuerzo adicional (puede ser más difícil convertir formatos y usar herramientas estándar, por ejemplo), pero compromete en menor grado los objetivos principales.
+	\item Probabilidad de ocurrencia (O):3. Una buena comprensión de los algoritmos permite diagnosticar problemas y encontrar estrategias para mitigarlos.
+\end{itemize}
+Nueva asignación de S y O: 18.
 
-\end{consigna}
+\textbf{Riesgo 5: Falta de tiempo y/o recursos humanos para el desarrollo}. Plan de mitigación: se incluyó un tiempo de contingencia en la planificación de las tareas que conforman el camino crítico, de manera de mitigar posibles demoras causadas por imprevistos como enfermedades, viajes o mudanzas por trabajo, etc.
+\begin{itemize}
+	\item Severidad (S): 7 la severidad se mantiene constante.
+	\item Probabilidad de ocurrencia (O): 4 el plan de mitigación reduce la probabilidad de que las demoras eventuales afecten el desarrollo del proyecto.
+\end{itemize}
+Nueva asignación de S y O: 28.
 
 
 \section{14. Gestión de la calidad}
 \label{sec:calidad}
-
-\begin{consigna}{red}
-Elija al menos diez requerimientos que a su criterio sean los más importantes/críticos/que aportan más valor y para cada uno de ellos indique las acciones de verificación y validación que permitan asegurar su cumplimiento.
-
-\begin{itemize} 
-\item Req \#1: copiar acá el requerimiento con su correspondiente número.
-
 \begin{itemize}
-	\item Verificación para confirmar si se cumplió con lo requerido antes de mostrar el sistema al cliente. Detallar.
-	\item Validación con el cliente para confirmar que está de acuerdo en que se cumplió con lo requerido. Detallar. 
+\item Req \#1.1: el sistema debe ser capaz de identificar y cuantificar frutos tanto en estado inmaduro o maduro a partir de fotos de árboles tomadas en la plantación.
+	\begin{itemize}
+	\item Verificación: se ensayará con un set de imágenes con las casuísticas que se pueden presentar. Por ejemplo, árboles con todos frutos inmaduros, con todos maduros, etc. y se medirá la performance del sistema.
+	\item Validación: el cliente procesará un conjunto nuevo de imágenes con la
+solución desarrollada. Se inspeccionará la salida obtenida para todos los casos posibles.
+	\end{itemize}
+
+\item Req \#1.3: el sistema deberá indicar el grado de confianza de la detección y el error esperado en las mediciones.
+	\begin{itemize}
+	\item Verificación: se ejecutará el sistema con el dataset de test y se confirmará que el resultado sea el esperado.
+	\item Validación: el cliente procesará un conjunto nuevo de imágenes y se medirá que el resultado esté en el grado de confianza y error esperado que se hayan configurado.
+	\end{itemize}
+
+\item Req \#1.5: los dataset y código en repositorios deben mantenerse NO abiertos, de modo de mantener la confidencialidad del trabajo.
+	\begin{itemize}
+	\item Verificación: se controlarán las configuraciones de seguridad del repositorio y de las unidades de almacenamiento compartido donde se haya guardado la información del
+trabajo.
+	\item Validación: el cliente comprobará que tiene acceso al repositorio y podrá validar con un tercero ajeno al proyecto que el ingreso se encuentra bloqueado para este.
+	\end{itemize}
+
+\item Req \#1.6: el usuario debe poder analizar una foto individual o un grupo de fotos, por lo menos grupos de 20 imágenes.
+	\begin{itemize}
+	\item Verificación: se verificará el funcionamiento del sistema utilizando el dataset de test en grupos de diferentes tamaños.
+	\item Validación: el cliente procesará un conjunto nuevo de imágenes en grupos de diferentes tamaños.
+	\end{itemize}
+
+\item Req \#1.7: el usuario debe ser capaz de cambiar el nivel de confianza para modificar la detección.
+	\begin{itemize}
+	\item Verificación: se verificará el funcionamiento del sistema utilizando el dataset de test con diferentes valores de nivel de confianza.
+	\item Validación: el cliente procesará un conjunto nuevo de imágenes con diferentes valores de nivel de confianza.
+	\end{itemize}
+
+\item Req \#2.2. se deben describir los ensayos y condiciones para la reproducción de los mismos.
+	\begin{itemize}
+	\item Verificación: los ensayos con el dataset de test se diseñarán y documentarán contemplando diferentes escenarios, se verificará que se puedan reproducir.
+	\item Validación: el cliente procesará el dataset de test siguiendo la documentación de los ensayos para verificar su reproducción.
+	\end{itemize}
+
+\item Req \#3.1: el modelo debe ser entrenado a partir de modelos pre-entrenados utilizando la técnica de \textit{transfer learning}.
+	\begin{itemize}
+	\item Verificación: análisis de las notebooks de validación de los algoritmos, el código fuente implementado y los datasets utilizados durante el entrenamiento de los modelos.
+	\item Validación: verificación de métricas superiores a los umbrales mínimos definidos.
+	\end{itemize}
+
+\item Req \#4.1: la intefaz debe ser intuitiva, con capacidad de cargar las fotos de manera sencilla.
+	\begin{itemize}
+	\item Verificación: se implementará la interfaz de manera que la interacción con el usuario sea mínima pero conteniendo los diferentes comandos y táreas definidas, se ensayará cada uno de ellos en los diferentes escenarios.
+	\item Validación: se realizará una demostración global del sistema al cliente donde él pueda verificar la funcionalidad de la interfaz. 
+	\end{itemize}
 \end{itemize}
 
-\end{itemize}
-
-Tener en cuenta que en este contexto se pueden mencionar simulaciones, cálculos, revisión de hojas de datos, consulta con expertos, mediciones, etc.  
-
-Las acciones de verificación suelen considerar al entregable como ``caja blanca'', es decir se conoce en profundidad su funcionamiento interno.  
-
-En cambio, las acciones de validación suelen considerar al entregable como ``caja negra'', es decir, que no se conocen los detalles de su funcionamiento interno.
-
-\end{consigna}
-
+\newpage
 \section{15. Procesos de cierre}    
 \label{sec:cierre}
 
-\begin{consigna}{red}
-Establecer las pautas de trabajo para realizar una reunión final de evaluación del proyecto, tal que contemple las siguientes actividades:
-
+Finalizado el proyecto, el proceso de cierre contemplará las siguientes actividades:
 \begin{itemize}
-	\item Pautas de trabajo que se seguirán para analizar si se respetó el Plan de Proyecto original:\\
-	 - Indicar quién se ocupará de hacer esto y cuál será el procedimiento a aplicar. 
-	\item Identificación de las técnicas y procedimientos útiles e inútiles que se emplearon, los problemas que surgieron y cómo se solucionaron:\\
-	 - Indicar quién se ocupará de hacer esto y cuál será el procedimiento para dejar registro.
-	\item Indicar quién organizará el acto de agradecimiento a todos los interesados, y en especial al equipo de trabajo y colaboradores:\\
-	  - Indicar esto y quién financiará los gastos correspondientes.
+\item Reunión de evaluación final:
+	\begin{itemize}
+	\item Será virtual, contará con la participación de todos los
+interesados del proyecto. En la agenda se incluirán las siguientes actividades:
+	\item Se realizará el contraste entre el plan y la ejecución.
+	\item Revisión general del informe, ensayos y resultados.
+	\item Demostración del repositorio con la documentación y código. Se repasará la instalación/ejecución del sistema.
+ 	\item Repaso de las recomendaciones para la captura de imágenes para el uso con el sistema.
+ 	\item Análisis de las lecciones aprendidas (discutir qué problemas surgieron durante el
+proyecto y qué soluciones se aplicaron).
+ 	\item Se proporcionará un espacio para que los interesados puedan realizar consultas y
+evacuar dudas sobre los temas discutidos o los entregables.
+	\end{itemize}
+\item Defensa pública del proyecto:
+se realizará en modalidad virtual y participarán los interesados, jurados y personal
+docente. Al final de la presentación se agradecerá formalmente a todos aquellos que
+colaboraron durante el proyecto.
 \end{itemize}
-
-\end{consigna}
 
 \end{document}
